@@ -5,6 +5,8 @@
   --text-main-color: rgba(38, 50, 56, 1);
   --text-sec-color: rgba(66, 83, 88, 1);
   --border-debug: 2px dashed red;
+  --main-grid-def: minmax(1rem, 1fr) minmax(min-content, 140rem)
+    minmax(1rem, 1fr);
 }
 html {
   box-sizing: border-box;
@@ -25,10 +27,7 @@ header {
   background-color: var(--front-page-background);
   border-bottom: 1px solid var(--highlight-color);
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 110rem) minmax(
-      1rem,
-      1fr
-    );
+  grid-template-columns: var(--main-grid-def);
   grid-template-rows: 5rem 1fr;
   font-size: 2.4rem;
 }
@@ -143,15 +142,11 @@ nav {
 main {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 110rem) minmax(
-      1rem,
-      1fr
-    );
-  grid-template-rows: 5rem 1fr;
+  grid-template-columns: var(--main-grid-def);
+  grid-template-rows: auto;
 }
 
 .choose {
-  grid-column: 2 / 3;
   height: 60vh;
   width: 100%;
   display: grid;
@@ -159,6 +154,7 @@ main {
   align-items: center;
 }
 .choose > div {
+  width: 100%;
   margin: 0 auto;
   border-top: 1.5px solid var(--highlight-color);
   border-bottom: 1.5px solid var(--highlight-color);
@@ -184,7 +180,6 @@ main {
 }
 
 .choose-text {
-  width: fit-content;
   grid-row-start: 1;
   grid-column: 1 / 2;
   height: 100%;
@@ -194,7 +189,6 @@ main {
 }
 
 .choose-text p {
-  margin-right: 3rem;
   max-width: 47rem;
   height: 8.8rem;
   font-size: 1.8rem;
@@ -222,4 +216,9 @@ main {
   font-weight: 600;
   line-height: 3rem;
   letter-spacing: 0.54px;
+}
+
+/* define the place in the main tag grid */
+.container {
+  grid-column: 2 / 3;
 }
