@@ -395,9 +395,10 @@ main {
   margin: auto;
 }
 
-.partners li {
+li {
   list-style-type: none;
 }
+
 .partners figure {
   margin: auto;
   width: fit-content;
@@ -435,4 +436,26 @@ main {
   line-height: normal;
   letter-spacing: -0.24px;
   width: auto;
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--highlight-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+
+footer ul {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
 }
