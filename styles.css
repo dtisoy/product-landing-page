@@ -358,3 +358,47 @@ main {
   line-height: 3rem;
   letter-spacing: 0.48px;
 }
+
+/* partners */
+.partners {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.partners h2 {
+  text-align: center;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 8.8rem;
+  letter-spacing: 1.44px;
+}
+
+.partners p {
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+  max-width: 93rem;
+  letter-spacing: 0.54px;
+  margin: auto;
+}
+
+.partners ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.partners li {
+  list-style-type: none;
+}
+.partners figure {
+  margin: auto;
+  width: fit-content;
+}
