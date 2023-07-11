@@ -360,7 +360,7 @@ main {
 }
 
 /* partners */
-.partners {
+.section-flex {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -401,4 +401,38 @@ main {
 .partners figure {
   margin: auto;
   width: fit-content;
+}
+
+/* contact us */
+.contact-us {
+  grid-column: 1 / -1;
+  min-height: 60vh;
+  border-top: 1px solid #ebb762;
+  background: var(--front-page-background);
+}
+
+.contact-us h2 {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 8.8rem;
+  letter-spacing: 1.92px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-us .nav-contact,
+.contact-us figure {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact-us button {
+  height: 7rem;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  width: auto;
 }
