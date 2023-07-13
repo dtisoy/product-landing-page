@@ -500,6 +500,10 @@ footer ul {
 }
 
 @media (max-width: 1024px) {
+  header {
+    grid-template-rows: auto;
+  }
+  
   .header-main {
     grid-template-columns: 1fr;
     width: fit-content;
