@@ -17,16 +17,20 @@
           <span>DesignCompany</span>
         </div>
         <ul class="nav-navigation">
-          <li><a class="nav-link">Home</a></li>
-          <li><a class="nav-link">Our Work</a></li>
-          <li><a class="nav-link">Services</a></li>
-          <li><a class="nav-link">Partners</a></li>
+          <li><a class="nav-link" href="#header-id">Home</a></li>
+          <li><a class="nav-link" href="#our-work-id">Our Work</a></li>
+          <li><a class="nav-link" href="#services-id">Services</a></li>
+          <li><a class="nav-link" href="#partners-id">Partners</a></li>
         </ul>
         <div class="nav-contact">
-          <button><a>Contact us</a></button>
+          <div class="hl-btn">
+            <a class="get-started nav-link" href="#get-started-id"
+              >get started</a
+            >
+          </div>
         </div>
       </nav>
-      <section class="header-main">
+      <section class="header-main" id="header-id">
         <div class="header-text">
           <h1>
             Create <span class="hl-text">the best</span> digital product with us
@@ -38,6 +42,7 @@
         </div>
         <figure class="header-figure">
           <img
+            id="header-img"
             src="images/header-image.svg"
             alt="ilustrative image: person describing an idea"
             loading="lazy"
@@ -65,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section class="container our-work">
+      <section class="container our-work" id="our-work-id">
         <div class="ow-text-main">
           <h2 class="normal-text">our work</h2>
           <p>We’re on a mission to help businesses grow faster than ever</p>
@@ -103,7 +108,7 @@
           </div>
         </div>
       </section>
-      <section class="container services">
+      <section class="container services" id="services-id">
         <div class="services-title">
           <h1>Core values we always live by</h1>
           <figure>
@@ -149,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section class="container partners section-flex">
+      <section class="container partners section-flex" id="partners-id">
         <h2>Our partners in advertising</h2>
         <p>
           To spur growth, we have vital relationships with the best advertising
@@ -178,18 +183,37 @@
           <img src="images/partners-section/Market launch-pana 1.svg" alt="" />
         </figure>
       </section>
-      <section class="contact-us section-flex">
+      <section class="contact-us section-flex" id="get-started-id">
         <h2>Let’s get started</h2>
-        <div class="nav-contact">
-          <button><a>Contact us</a></button>
+        <div>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            class="send-email"
+          >
+            <label for="mail-input"
+              >Enter your email
+
+              <input
+                type="email"
+                placeholder="example@meta.com"
+                id="email"
+                name="email"
+                class="mail-input"
+              />
+            </label>
+            <input
+              id="submit"
+              type="submit"
+              class="get-started hl-btn"
+              value="get started"
+            />
+          </form>
         </div>
-        <figure>
-          <img
-            src="images/footerImage.svg"
-            aria-hidden="true"
-            class="figure-image"
-          />
-        </figure>
+        <iframe
+          id="video"
+          src="https://player.vimeo.com/video/371837723"
+        ></iframe>
       </section>
     </main>
     <footer>

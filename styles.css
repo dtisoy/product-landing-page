@@ -36,12 +36,20 @@ header {
 }
 
 nav {
+  padding: 0.5rem;
   width: 100%;
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: minmax(min-content, 30%) 1fr minmax(min-content, 30%);
   align-items: center;
   font-size: 1.8rem;
+  background-color: white;
+  position: fixed;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-logo {
@@ -66,15 +74,15 @@ nav {
   margin-left: -0.8rem;
 }
 
-.nav-contact {
-  text-align: end;
-  margin: 0;
+.hl-btn {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-contact button {
-  width: 113px;
+.hl-btn {
   background-color: var(--highlight-color);
-  border: none;
   border-radius: 5px 15px;
   height: 4rem;
   letter-spacing: -0.18px;
@@ -393,6 +401,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding: 0;
 }
 
 li {
@@ -407,7 +416,7 @@ li {
 /* contact us */
 .contact-us {
   grid-column: 1 / -1;
-  min-height: 60vh;
+  min-height: 65vh;
   border-top: 1px solid #ebb762;
   background: var(--front-page-background);
 }
@@ -422,20 +431,51 @@ li {
   text-align: center;
 }
 
-.contact-us .nav-contact,
-.contact-us figure {
+.contact-us .nav-contact {
   width: fit-content;
   margin: 0 auto;
 }
 
-.contact-us button {
-  height: 7rem;
+.contact-us iframe {
+  width: 50%;
+  height: 273px;
+  margin: 0 auto;
+  border: none;
+}
+
+.send-email {
   font-size: 2.4rem;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-  letter-spacing: -0.24px;
-  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+.send-email .hl-btn {
+  font-weight: normal;
+  border: none;
+  float: none;
+}
+
+.send-email label {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.mail-input {
+  width: 50%;
+  height: 3rem;
+  font-size: 1.8rem;
+  border: var(--hl-border);
+}
+
+.get-started {
+  font-size: inherit;
+  padding: 0 1rem;
 }
 
 footer {
