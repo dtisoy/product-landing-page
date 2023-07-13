@@ -505,6 +505,7 @@ footer ul {
     grid-template-columns: 1fr;
     width: fit-content;
     margin: auto;
+    padding: 10rem;
   }
 
   nav {
