@@ -509,7 +509,7 @@ footer ul {
   nav {
     grid-template-columns: 1fr;
     row-gap: 1rem;
-    position: relative;
+    position: static;
     padding: 0;
     margin: 0;
     background-color: transparent;
