@@ -36,7 +36,6 @@ header {
 }
 
 nav {
-  padding: 0.5rem;
   width: 100%;
   grid-column: 2 / 3;
   display: grid;
@@ -505,12 +504,15 @@ footer ul {
     grid-template-columns: 1fr;
     width: fit-content;
     margin: auto;
-    padding: 10rem;
   }
 
   nav {
     grid-template-columns: 1fr;
     row-gap: 1rem;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
   }
 
   .nav-contact {
